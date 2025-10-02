@@ -1,21 +1,38 @@
+# test_load_openr1_full.py
 import torch
-
+from torch.utils.data import DataLoader
 from data.load_openr1 import load_openr1_subset
-from models.load_gemma import load_gemma
 
-# Load model + tokenizer
-model, tokenizer = load_gemma(device="mps")   # "cuda" if GPU, "mps" for Apple M1/M2
+def collate_fn(batch):
+    input_ids = torch.stack([torch.tensor(item["input_ids"]) for item in batch])
+    attention_mask = torch.stack([torch.tensor(item["attention_mask"]) for item in batch])
+    prompts = [item["prompt"] for item in batch]
+    labels = [item["label"] for item in batch]
 
-# Load dataset subset
-dataset, tokenizer = load_openr1_subset(tokenizer_name="google/gemma-3-270m", subset_size=100)
+    return {
+        "input_ids": input_ids,
+        "attention_mask": attention_mask,
+        "prompts": prompts,
+        "labels": labels,
+    }
 
-# Example forward pass
-sample = dataset[0]
-inputs = {
-    "input_ids": sample["input_ids"].unsqueeze(0).to(model.device),
-    "attention_mask": sample["attention_mask"].unsqueeze(0).to(model.device)
-}
 
-with torch.no_grad():
-    outputs = model(**inputs)
-    print("Logits shape:", outputs.logits.shape)
+def main():
+    dataset, tokenizer = load_openr1_subset(
+        tokenizer_name="google/gemma-3-270m",
+        split="train",
+        subset_size=100,   # smaller for speed
+    )
+
+    dataloader = DataLoader(dataset, batch_size=8, collate_fn=collate_fn)
+
+    print(f"Dataset size: {len(dataset)}")
+    for batch in dataloader:
+        print("Batch input_ids shape:", batch["input_ids"].shape)
+        print("Batch attention_mask shape:", batch["attention_mask"].shape)
+        print("Prompts[0] (truncated):", batch["prompts"][0][:80])
+        print("Labels[0] (truncated):", batch["labels"][0][:80])
+        break  # just one batch
+
+if __name__ == "__main__":
+    main()
