@@ -1,0 +1,2938 @@
+{
+  "model.embed_tokens": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0023,
+    "std": 1.0313
+  },
+  "model.layers.0.input_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.2046,
+    "std": 16.3161
+  },
+  "model.layers.0.mlp": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.2704,
+    "std": 14.2556
+  },
+  "model.layers.0.mlp.act_fn": {
+    "shape": [
+      2,
+      4,
+      2048
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.5387,
+    "std": 1.9582
+  },
+  "model.layers.0.mlp.down_proj": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.2704,
+    "std": 14.2556
+  },
+  "model.layers.0.mlp.gate_proj": {
+    "shape": [
+      2,
+      4,
+      2048
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.2875,
+    "std": 2.761
+  },
+  "model.layers.0.mlp.up_proj": {
+    "shape": [
+      2,
+      4,
+      2048
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0011,
+    "std": 2.197
+  },
+  "model.layers.0.post_attention_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.1989,
+    "std": 5.1217
+  },
+  "model.layers.0.post_feedforward_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 1.0145,
+    "std": 56.6691
+  },
+  "model.layers.0.pre_feedforward_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0284,
+    "std": 2.9812
+  },
+  "model.layers.0.self_attn": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.2554,
+    "std": 6.3979
+  },
+  "model.layers.0.self_attn.k_norm": {
+    "shape": [
+      2,
+      1,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0195,
+    "std": 1.5735
+  },
+  "model.layers.0.self_attn.k_proj": {
+    "shape": [
+      2,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.047,
+    "std": 16.8389
+  },
+  "model.layers.0.self_attn.o_proj": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.2554,
+    "std": 6.3979
+  },
+  "model.layers.0.self_attn.q_norm": {
+    "shape": [
+      2,
+      4,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.075,
+    "std": 1.3458
+  },
+  "model.layers.0.self_attn.q_proj": {
+    "shape": [
+      2,
+      4,
+      1024
+    ],
+    "frac_finite": 1.0,
+    "mean": 1.4604,
+    "std": 22.3519
+  },
+  "model.layers.0.self_attn.v_proj": {
+    "shape": [
+      2,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.1597,
+    "std": 10.9153
+  },
+  "model.layers.1.input_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0185,
+    "std": 8.4066
+  },
+  "model.layers.1.mlp": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0724,
+    "std": 11.6353
+  },
+  "model.layers.1.mlp.act_fn": {
+    "shape": [
+      2,
+      4,
+      2048
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.5246,
+    "std": 2.0511
+  },
+  "model.layers.1.mlp.down_proj": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0724,
+    "std": 11.6353
+  },
+  "model.layers.1.mlp.gate_proj": {
+    "shape": [
+      2,
+      4,
+      2048
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0771,
+    "std": 2.8208
+  },
+  "model.layers.1.mlp.up_proj": {
+    "shape": [
+      2,
+      4,
+      2048
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0175,
+    "std": 2.9189
+  },
+  "model.layers.1.post_attention_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 1.0039,
+    "std": 33.6438
+  },
+  "model.layers.1.post_feedforward_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.5092,
+    "std": 27.8457
+  },
+  "model.layers.1.pre_feedforward_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0832,
+    "std": 3.5145
+  },
+  "model.layers.1.self_attn": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.1293,
+    "std": 4.2515
+  },
+  "model.layers.1.self_attn.k_norm": {
+    "shape": [
+      2,
+      1,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.2035,
+    "std": 2.2166
+  },
+  "model.layers.1.self_attn.k_proj": {
+    "shape": [
+      2,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.6277,
+    "std": 11.2691
+  },
+  "model.layers.1.self_attn.o_proj": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.1293,
+    "std": 4.2515
+  },
+  "model.layers.1.self_attn.q_norm": {
+    "shape": [
+      2,
+      4,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.1454,
+    "std": 2.9943
+  },
+  "model.layers.1.self_attn.q_proj": {
+    "shape": [
+      2,
+      4,
+      1024
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.1116,
+    "std": 18.9812
+  },
+  "model.layers.1.self_attn.v_proj": {
+    "shape": [
+      2,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0376,
+    "std": 7.6034
+  },
+  "model.layers.10.input_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0992,
+    "std": 2.4385
+  },
+  "model.layers.10.mlp": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0004,
+    "std": 0.0981
+  },
+  "model.layers.10.mlp.act_fn": {
+    "shape": [
+      2,
+      4,
+      2048
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0265,
+    "std": 0.2561
+  },
+  "model.layers.10.mlp.down_proj": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0004,
+    "std": 0.0981
+  },
+  "model.layers.10.mlp.gate_proj": {
+    "shape": [
+      2,
+      4,
+      2048
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.1137,
+    "std": 0.5058
+  },
+  "model.layers.10.mlp.up_proj": {
+    "shape": [
+      2,
+      4,
+      2048
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0044,
+    "std": 0.4149
+  },
+  "model.layers.10.post_attention_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 2.1206,
+    "std": 68.2806
+  },
+  "model.layers.10.post_feedforward_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.141,
+    "std": 92.2808
+  },
+  "model.layers.10.pre_feedforward_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0205,
+    "std": 0.5303
+  },
+  "model.layers.10.self_attn": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0279,
+    "std": 1.2478
+  },
+  "model.layers.10.self_attn.k_norm": {
+    "shape": [
+      2,
+      1,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.1292,
+    "std": 3.6163
+  },
+  "model.layers.10.self_attn.k_proj": {
+    "shape": [
+      2,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0519,
+    "std": 2.4184
+  },
+  "model.layers.10.self_attn.o_proj": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0279,
+    "std": 1.2478
+  },
+  "model.layers.10.self_attn.q_norm": {
+    "shape": [
+      2,
+      4,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0514,
+    "std": 1.1899
+  },
+  "model.layers.10.self_attn.q_proj": {
+    "shape": [
+      2,
+      4,
+      1024
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.1446,
+    "std": 2.7647
+  },
+  "model.layers.10.self_attn.v_proj": {
+    "shape": [
+      2,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0795,
+    "std": 1.5678
+  },
+  "model.layers.11.input_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0264,
+    "std": 0.6398
+  },
+  "model.layers.11.mlp": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0075,
+    "std": 0.2104
+  },
+  "model.layers.11.mlp.act_fn": {
+    "shape": [
+      2,
+      4,
+      2048
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0488,
+    "std": 0.3359
+  },
+  "model.layers.11.mlp.down_proj": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0075,
+    "std": 0.2104
+  },
+  "model.layers.11.mlp.gate_proj": {
+    "shape": [
+      2,
+      4,
+      2048
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.1947,
+    "std": 0.7038
+  },
+  "model.layers.11.mlp.up_proj": {
+    "shape": [
+      2,
+      4,
+      2048
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0044,
+    "std": 0.5518
+  },
+  "model.layers.11.post_attention_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 1.5811,
+    "std": 55.5789
+  },
+  "model.layers.11.post_feedforward_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 2.1297,
+    "std": 169.4154
+  },
+  "model.layers.11.pre_feedforward_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.022,
+    "std": 0.6473
+  },
+  "model.layers.11.self_attn": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0,
+    "std": 0.1477
+  },
+  "model.layers.11.self_attn.k_norm": {
+    "shape": [
+      2,
+      1,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.4808,
+    "std": 8.0998
+  },
+  "model.layers.11.self_attn.k_proj": {
+    "shape": [
+      2,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0178,
+    "std": 0.5526
+  },
+  "model.layers.11.self_attn.o_proj": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0,
+    "std": 0.1477
+  },
+  "model.layers.11.self_attn.q_norm": {
+    "shape": [
+      2,
+      4,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0407,
+    "std": 1.3726
+  },
+  "model.layers.11.self_attn.q_proj": {
+    "shape": [
+      2,
+      4,
+      1024
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0256,
+    "std": 0.8922
+  },
+  "model.layers.11.self_attn.v_proj": {
+    "shape": [
+      2,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0043,
+    "std": 0.4548
+  },
+  "model.layers.12.input_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0841,
+    "std": 1.9013
+  },
+  "model.layers.12.mlp": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0034,
+    "std": 0.1235
+  },
+  "model.layers.12.mlp.act_fn": {
+    "shape": [
+      2,
+      4,
+      2048
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.026,
+    "std": 0.2369
+  },
+  "model.layers.12.mlp.down_proj": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0034,
+    "std": 0.1235
+  },
+  "model.layers.12.mlp.gate_proj": {
+    "shape": [
+      2,
+      4,
+      2048
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0912,
+    "std": 0.4596
+  },
+  "model.layers.12.mlp.up_proj": {
+    "shape": [
+      2,
+      4,
+      2048
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0028,
+    "std": 0.3822
+  },
+  "model.layers.12.post_attention_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 1.0895,
+    "std": 90.8604
+  },
+  "model.layers.12.post_feedforward_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 4.0045,
+    "std": 132.1208
+  },
+  "model.layers.12.pre_feedforward_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0144,
+    "std": 0.405
+  },
+  "model.layers.12.self_attn": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0048,
+    "std": 0.6675
+  },
+  "model.layers.12.self_attn.k_norm": {
+    "shape": [
+      2,
+      1,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.1027,
+    "std": 3.2071
+  },
+  "model.layers.12.self_attn.k_proj": {
+    "shape": [
+      2,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.1241,
+    "std": 2.2537
+  },
+  "model.layers.12.self_attn.o_proj": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0048,
+    "std": 0.6675
+  },
+  "model.layers.12.self_attn.q_norm": {
+    "shape": [
+      2,
+      4,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0346,
+    "std": 0.9007
+  },
+  "model.layers.12.self_attn.q_proj": {
+    "shape": [
+      2,
+      4,
+      1024
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0213,
+    "std": 2.3972
+  },
+  "model.layers.12.self_attn.v_proj": {
+    "shape": [
+      2,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0247,
+    "std": 1.5772
+  },
+  "model.layers.13.input_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.1523,
+    "std": 3.4961
+  },
+  "model.layers.13.mlp": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0019,
+    "std": 0.0817
+  },
+  "model.layers.13.mlp.act_fn": {
+    "shape": [
+      2,
+      4,
+      2048
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0178,
+    "std": 0.198
+  },
+  "model.layers.13.mlp.down_proj": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0019,
+    "std": 0.0817
+  },
+  "model.layers.13.mlp.gate_proj": {
+    "shape": [
+      2,
+      4,
+      2048
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0723,
+    "std": 0.3907
+  },
+  "model.layers.13.mlp.up_proj": {
+    "shape": [
+      2,
+      4,
+      2048
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0039,
+    "std": 0.3622
+  },
+  "model.layers.13.post_attention_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 6.1875,
+    "std": 140.5339
+  },
+  "model.layers.13.post_feedforward_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.8124,
+    "std": 134.0923
+  },
+  "model.layers.13.pre_feedforward_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0098,
+    "std": 0.3749
+  },
+  "model.layers.13.self_attn": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.007,
+    "std": 1.0776
+  },
+  "model.layers.13.self_attn.k_norm": {
+    "shape": [
+      2,
+      1,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0758,
+    "std": 1.9271
+  },
+  "model.layers.13.self_attn.k_proj": {
+    "shape": [
+      2,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0016,
+    "std": 2.173
+  },
+  "model.layers.13.self_attn.o_proj": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.007,
+    "std": 1.0776
+  },
+  "model.layers.13.self_attn.q_norm": {
+    "shape": [
+      2,
+      4,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0517,
+    "std": 1.4342
+  },
+  "model.layers.13.self_attn.q_proj": {
+    "shape": [
+      2,
+      4,
+      1024
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0241,
+    "std": 2.3241
+  },
+  "model.layers.13.self_attn.v_proj": {
+    "shape": [
+      2,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.075,
+    "std": 1.6568
+  },
+  "model.layers.14.input_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.066,
+    "std": 2.6314
+  },
+  "model.layers.14.mlp": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0025,
+    "std": 0.0728
+  },
+  "model.layers.14.mlp.act_fn": {
+    "shape": [
+      2,
+      4,
+      2048
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.016,
+    "std": 0.1856
+  },
+  "model.layers.14.mlp.down_proj": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0025,
+    "std": 0.0728
+  },
+  "model.layers.14.mlp.gate_proj": {
+    "shape": [
+      2,
+      4,
+      2048
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0577,
+    "std": 0.3607
+  },
+  "model.layers.14.mlp.up_proj": {
+    "shape": [
+      2,
+      4,
+      2048
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.005,
+    "std": 0.3421
+  },
+  "model.layers.14.post_attention_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 5.7634,
+    "std": 89.4595
+  },
+  "model.layers.14.post_feedforward_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": -1.9443,
+    "std": 130.4603
+  },
+  "model.layers.14.pre_feedforward_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.006,
+    "std": 0.3446
+  },
+  "model.layers.14.self_attn": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0659,
+    "std": 2.0891
+  },
+  "model.layers.14.self_attn.k_norm": {
+    "shape": [
+      2,
+      1,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0927,
+    "std": 2.6595
+  },
+  "model.layers.14.self_attn.k_proj": {
+    "shape": [
+      2,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0924,
+    "std": 3.3771
+  },
+  "model.layers.14.self_attn.o_proj": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0659,
+    "std": 2.0891
+  },
+  "model.layers.14.self_attn.q_norm": {
+    "shape": [
+      2,
+      4,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.001,
+    "std": 1.2754
+  },
+  "model.layers.14.self_attn.q_proj": {
+    "shape": [
+      2,
+      4,
+      1024
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0448,
+    "std": 3.1038
+  },
+  "model.layers.14.self_attn.v_proj": {
+    "shape": [
+      2,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0554,
+    "std": 2.0246
+  },
+  "model.layers.15.input_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0848,
+    "std": 2.8334
+  },
+  "model.layers.15.mlp": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0002,
+    "std": 0.0647
+  },
+  "model.layers.15.mlp.act_fn": {
+    "shape": [
+      2,
+      4,
+      2048
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0091,
+    "std": 0.1588
+  },
+  "model.layers.15.mlp.down_proj": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0002,
+    "std": 0.0647
+  },
+  "model.layers.15.mlp.gate_proj": {
+    "shape": [
+      2,
+      4,
+      2048
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0471,
+    "std": 0.3015
+  },
+  "model.layers.15.mlp.up_proj": {
+    "shape": [
+      2,
+      4,
+      2048
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0054,
+    "std": 0.2933
+  },
+  "model.layers.15.post_attention_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.7391,
+    "std": 74.6022
+  },
+  "model.layers.15.post_feedforward_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": -1.0878,
+    "std": 148.6531
+  },
+  "model.layers.15.pre_feedforward_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0024,
+    "std": 0.2848
+  },
+  "model.layers.15.self_attn": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0513,
+    "std": 1.4026
+  },
+  "model.layers.15.self_attn.k_norm": {
+    "shape": [
+      2,
+      1,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0164,
+    "std": 3.3377
+  },
+  "model.layers.15.self_attn.k_proj": {
+    "shape": [
+      2,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.271,
+    "std": 3.4799
+  },
+  "model.layers.15.self_attn.o_proj": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0513,
+    "std": 1.4026
+  },
+  "model.layers.15.self_attn.q_norm": {
+    "shape": [
+      2,
+      4,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0615,
+    "std": 2.2578
+  },
+  "model.layers.15.self_attn.q_proj": {
+    "shape": [
+      2,
+      4,
+      1024
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0671,
+    "std": 3.2956
+  },
+  "model.layers.15.self_attn.v_proj": {
+    "shape": [
+      2,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0029,
+    "std": 1.9486
+  },
+  "model.layers.16.input_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0754,
+    "std": 3.645
+  },
+  "model.layers.16.mlp": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0025,
+    "std": 0.0704
+  },
+  "model.layers.16.mlp.act_fn": {
+    "shape": [
+      2,
+      4,
+      2048
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.009,
+    "std": 0.1471
+  },
+  "model.layers.16.mlp.down_proj": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0025,
+    "std": 0.0704
+  },
+  "model.layers.16.mlp.gate_proj": {
+    "shape": [
+      2,
+      4,
+      2048
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0379,
+    "std": 0.2759
+  },
+  "model.layers.16.mlp.up_proj": {
+    "shape": [
+      2,
+      4,
+      2048
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0001,
+    "std": 0.2782
+  },
+  "model.layers.16.post_attention_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 3.8379,
+    "std": 93.0571
+  },
+  "model.layers.16.post_feedforward_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": -3.9631,
+    "std": 468.0225
+  },
+  "model.layers.16.pre_feedforward_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0004,
+    "std": 0.272
+  },
+  "model.layers.16.self_attn": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0588,
+    "std": 1.5423
+  },
+  "model.layers.16.self_attn.k_norm": {
+    "shape": [
+      2,
+      1,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0435,
+    "std": 2.3823
+  },
+  "model.layers.16.self_attn.k_proj": {
+    "shape": [
+      2,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0773,
+    "std": 5.9042
+  },
+  "model.layers.16.self_attn.o_proj": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0588,
+    "std": 1.5423
+  },
+  "model.layers.16.self_attn.q_norm": {
+    "shape": [
+      2,
+      4,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.053,
+    "std": 1.9419
+  },
+  "model.layers.16.self_attn.q_proj": {
+    "shape": [
+      2,
+      4,
+      1024
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.2933,
+    "std": 4.903
+  },
+  "model.layers.16.self_attn.v_proj": {
+    "shape": [
+      2,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0536,
+    "std": 2.8345
+  },
+  "model.layers.17.input_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0718,
+    "std": 2.1672
+  },
+  "model.layers.17.mlp": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0024,
+    "std": 0.059
+  },
+  "model.layers.17.mlp.act_fn": {
+    "shape": [
+      2,
+      4,
+      2048
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0258,
+    "std": 0.1914
+  },
+  "model.layers.17.mlp.down_proj": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0024,
+    "std": 0.059
+  },
+  "model.layers.17.mlp.gate_proj": {
+    "shape": [
+      2,
+      4,
+      2048
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0182,
+    "std": 0.3199
+  },
+  "model.layers.17.mlp.up_proj": {
+    "shape": [
+      2,
+      4,
+      2048
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0049,
+    "std": 0.2995
+  },
+  "model.layers.17.post_attention_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": -2.3596,
+    "std": 43.2989
+  },
+  "model.layers.17.post_feedforward_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.7285,
+    "std": 459.1139
+  },
+  "model.layers.17.pre_feedforward_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0028,
+    "std": 0.2937
+  },
+  "model.layers.17.self_attn": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.005,
+    "std": 0.6183
+  },
+  "model.layers.17.self_attn.k_norm": {
+    "shape": [
+      2,
+      1,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0628,
+    "std": 2.1284
+  },
+  "model.layers.17.self_attn.k_proj": {
+    "shape": [
+      2,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0908,
+    "std": 1.8122
+  },
+  "model.layers.17.self_attn.o_proj": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.005,
+    "std": 0.6183
+  },
+  "model.layers.17.self_attn.q_norm": {
+    "shape": [
+      2,
+      4,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0098,
+    "std": 1.3095
+  },
+  "model.layers.17.self_attn.q_proj": {
+    "shape": [
+      2,
+      4,
+      1024
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0005,
+    "std": 1.9118
+  },
+  "model.layers.17.self_attn.v_proj": {
+    "shape": [
+      2,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0247,
+    "std": 1.2375
+  },
+  "model.layers.2.input_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0773,
+    "std": 2.1023
+  },
+  "model.layers.2.mlp": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.042,
+    "std": 1.3869
+  },
+  "model.layers.2.mlp.act_fn": {
+    "shape": [
+      2,
+      4,
+      2048
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.1243,
+    "std": 0.696
+  },
+  "model.layers.2.mlp.down_proj": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.042,
+    "std": 1.3869
+  },
+  "model.layers.2.mlp.gate_proj": {
+    "shape": [
+      2,
+      4,
+      2048
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.2849,
+    "std": 1.132
+  },
+  "model.layers.2.mlp.up_proj": {
+    "shape": [
+      2,
+      4,
+      2048
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0027,
+    "std": 1.0943
+  },
+  "model.layers.2.post_attention_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.3789,
+    "std": 11.7708
+  },
+  "model.layers.2.post_feedforward_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.1354,
+    "std": 20.0479
+  },
+  "model.layers.2.pre_feedforward_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0239,
+    "std": 1.2704
+  },
+  "model.layers.2.self_attn": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0129,
+    "std": 0.6544
+  },
+  "model.layers.2.self_attn.k_norm": {
+    "shape": [
+      2,
+      1,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0739,
+    "std": 2.8875
+  },
+  "model.layers.2.self_attn.k_proj": {
+    "shape": [
+      2,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0446,
+    "std": 2.3701
+  },
+  "model.layers.2.self_attn.o_proj": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0129,
+    "std": 0.6544
+  },
+  "model.layers.2.self_attn.q_norm": {
+    "shape": [
+      2,
+      4,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0029,
+    "std": 1.4527
+  },
+  "model.layers.2.self_attn.q_proj": {
+    "shape": [
+      2,
+      4,
+      1024
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0084,
+    "std": 2.6614
+  },
+  "model.layers.2.self_attn.v_proj": {
+    "shape": [
+      2,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0412,
+    "std": 1.631
+  },
+  "model.layers.3.input_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0408,
+    "std": 1.7046
+  },
+  "model.layers.3.mlp": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0192,
+    "std": 1.2218
+  },
+  "model.layers.3.mlp.act_fn": {
+    "shape": [
+      2,
+      4,
+      2048
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.3265,
+    "std": 0.9991
+  },
+  "model.layers.3.mlp.down_proj": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0192,
+    "std": 1.2218
+  },
+  "model.layers.3.mlp.gate_proj": {
+    "shape": [
+      2,
+      4,
+      2048
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0394,
+    "std": 1.3999
+  },
+  "model.layers.3.mlp.up_proj": {
+    "shape": [
+      2,
+      4,
+      2048
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0267,
+    "std": 1.1292
+  },
+  "model.layers.3.post_attention_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.7732,
+    "std": 22.541
+  },
+  "model.layers.3.post_feedforward_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 4.4561,
+    "std": 212.9986
+  },
+  "model.layers.3.pre_feedforward_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0292,
+    "std": 1.3049
+  },
+  "model.layers.3.self_attn": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0294,
+    "std": 0.5556
+  },
+  "model.layers.3.self_attn.k_norm": {
+    "shape": [
+      2,
+      1,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0184,
+    "std": 1.9622
+  },
+  "model.layers.3.self_attn.k_proj": {
+    "shape": [
+      2,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0558,
+    "std": 1.6831
+  },
+  "model.layers.3.self_attn.o_proj": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0294,
+    "std": 0.5556
+  },
+  "model.layers.3.self_attn.q_norm": {
+    "shape": [
+      2,
+      4,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0043,
+    "std": 1.2381
+  },
+  "model.layers.3.self_attn.q_proj": {
+    "shape": [
+      2,
+      4,
+      1024
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0489,
+    "std": 1.8049
+  },
+  "model.layers.3.self_attn.v_proj": {
+    "shape": [
+      2,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0354,
+    "std": 1.5403
+  },
+  "model.layers.4.input_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0548,
+    "std": 2.4355
+  },
+  "model.layers.4.mlp": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0174,
+    "std": 1.1024
+  },
+  "model.layers.4.mlp.act_fn": {
+    "shape": [
+      2,
+      4,
+      2048
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.1377,
+    "std": 0.7219
+  },
+  "model.layers.4.mlp.down_proj": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0174,
+    "std": 1.1024
+  },
+  "model.layers.4.mlp.gate_proj": {
+    "shape": [
+      2,
+      4,
+      2048
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.2501,
+    "std": 1.2376
+  },
+  "model.layers.4.mlp.up_proj": {
+    "shape": [
+      2,
+      4,
+      2048
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0076,
+    "std": 1.1417
+  },
+  "model.layers.4.post_attention_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 1.259,
+    "std": 24.1829
+  },
+  "model.layers.4.post_feedforward_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 5.3297,
+    "std": 272.6148
+  },
+  "model.layers.4.pre_feedforward_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0151,
+    "std": 1.3377
+  },
+  "model.layers.4.self_attn": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0192,
+    "std": 0.4115
+  },
+  "model.layers.4.self_attn.k_norm": {
+    "shape": [
+      2,
+      1,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0201,
+    "std": 2.7598
+  },
+  "model.layers.4.self_attn.k_proj": {
+    "shape": [
+      2,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0578,
+    "std": 2.4515
+  },
+  "model.layers.4.self_attn.o_proj": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0192,
+    "std": 0.4115
+  },
+  "model.layers.4.self_attn.q_norm": {
+    "shape": [
+      2,
+      4,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0555,
+    "std": 1.3579
+  },
+  "model.layers.4.self_attn.q_proj": {
+    "shape": [
+      2,
+      4,
+      1024
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0022,
+    "std": 2.4839
+  },
+  "model.layers.4.self_attn.v_proj": {
+    "shape": [
+      2,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0133,
+    "std": 2.2518
+  },
+  "model.layers.5.input_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0273,
+    "std": 1.3595
+  },
+  "model.layers.5.mlp": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0122,
+    "std": 1.9223
+  },
+  "model.layers.5.mlp.act_fn": {
+    "shape": [
+      2,
+      4,
+      2048
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.1326,
+    "std": 0.6963
+  },
+  "model.layers.5.mlp.down_proj": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0122,
+    "std": 1.9223
+  },
+  "model.layers.5.mlp.gate_proj": {
+    "shape": [
+      2,
+      4,
+      2048
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.1502,
+    "std": 1.0434
+  },
+  "model.layers.5.mlp.up_proj": {
+    "shape": [
+      2,
+      4,
+      2048
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0147,
+    "std": 1.014
+  },
+  "model.layers.5.post_attention_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 6.3361,
+    "std": 118.9731
+  },
+  "model.layers.5.post_feedforward_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 5.4273,
+    "std": 289.9185
+  },
+  "model.layers.5.pre_feedforward_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0165,
+    "std": 1.0354
+  },
+  "model.layers.5.self_attn": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.01,
+    "std": 0.6443
+  },
+  "model.layers.5.self_attn.k_norm": {
+    "shape": [
+      2,
+      1,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.1905,
+    "std": 6.7653
+  },
+  "model.layers.5.self_attn.k_proj": {
+    "shape": [
+      2,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0079,
+    "std": 1.231
+  },
+  "model.layers.5.self_attn.o_proj": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.01,
+    "std": 0.6443
+  },
+  "model.layers.5.self_attn.q_norm": {
+    "shape": [
+      2,
+      4,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0664,
+    "std": 1.4587
+  },
+  "model.layers.5.self_attn.q_proj": {
+    "shape": [
+      2,
+      4,
+      1024
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0025,
+    "std": 1.5064
+  },
+  "model.layers.5.self_attn.v_proj": {
+    "shape": [
+      2,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.021,
+    "std": 1.1409
+  },
+  "model.layers.6.input_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0437,
+    "std": 3.0612
+  },
+  "model.layers.6.mlp": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0014,
+    "std": 1.4496
+  },
+  "model.layers.6.mlp.act_fn": {
+    "shape": [
+      2,
+      4,
+      2048
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.1127,
+    "std": 0.7285
+  },
+  "model.layers.6.mlp.down_proj": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0014,
+    "std": 1.4496
+  },
+  "model.layers.6.mlp.gate_proj": {
+    "shape": [
+      2,
+      4,
+      2048
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.2869,
+    "std": 1.2307
+  },
+  "model.layers.6.mlp.up_proj": {
+    "shape": [
+      2,
+      4,
+      2048
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0092,
+    "std": 1.2409
+  },
+  "model.layers.6.post_attention_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.523,
+    "std": 11.8632
+  },
+  "model.layers.6.post_feedforward_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 4.935,
+    "std": 262.0551
+  },
+  "model.layers.6.pre_feedforward_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0258,
+    "std": 1.2234
+  },
+  "model.layers.6.self_attn": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.011,
+    "std": 0.3244
+  },
+  "model.layers.6.self_attn.k_norm": {
+    "shape": [
+      2,
+      1,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0538,
+    "std": 1.7841
+  },
+  "model.layers.6.self_attn.k_proj": {
+    "shape": [
+      2,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0958,
+    "std": 2.9121
+  },
+  "model.layers.6.self_attn.o_proj": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.011,
+    "std": 0.3244
+  },
+  "model.layers.6.self_attn.q_norm": {
+    "shape": [
+      2,
+      4,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0381,
+    "std": 1.0652
+  },
+  "model.layers.6.self_attn.q_proj": {
+    "shape": [
+      2,
+      4,
+      1024
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0279,
+    "std": 3.2923
+  },
+  "model.layers.6.self_attn.v_proj": {
+    "shape": [
+      2,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.1349,
+    "std": 3.2578
+  },
+  "model.layers.7.input_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0949,
+    "std": 4.3601
+  },
+  "model.layers.7.mlp": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0715,
+    "std": 2.9438
+  },
+  "model.layers.7.mlp.act_fn": {
+    "shape": [
+      2,
+      4,
+      2048
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.1846,
+    "std": 0.954
+  },
+  "model.layers.7.mlp.down_proj": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0715,
+    "std": 2.9438
+  },
+  "model.layers.7.mlp.gate_proj": {
+    "shape": [
+      2,
+      4,
+      2048
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.1405,
+    "std": 1.4632
+  },
+  "model.layers.7.mlp.up_proj": {
+    "shape": [
+      2,
+      4,
+      2048
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0036,
+    "std": 1.4299
+  },
+  "model.layers.7.post_attention_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 1.2431,
+    "std": 31.4121
+  },
+  "model.layers.7.post_feedforward_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 5.0932,
+    "std": 273.0678
+  },
+  "model.layers.7.pre_feedforward_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0241,
+    "std": 1.4572
+  },
+  "model.layers.7.self_attn": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.058,
+    "std": 0.9946
+  },
+  "model.layers.7.self_attn.k_norm": {
+    "shape": [
+      2,
+      1,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.2081,
+    "std": 2.1758
+  },
+  "model.layers.7.self_attn.k_proj": {
+    "shape": [
+      2,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.3247,
+    "std": 4.5915
+  },
+  "model.layers.7.self_attn.o_proj": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.058,
+    "std": 0.9946
+  },
+  "model.layers.7.self_attn.q_norm": {
+    "shape": [
+      2,
+      4,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0064,
+    "std": 1.154
+  },
+  "model.layers.7.self_attn.q_proj": {
+    "shape": [
+      2,
+      4,
+      1024
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0319,
+    "std": 4.899
+  },
+  "model.layers.7.self_attn.v_proj": {
+    "shape": [
+      2,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0233,
+    "std": 4.4489
+  },
+  "model.layers.8.input_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0835,
+    "std": 3.0184
+  },
+  "model.layers.8.mlp": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0106,
+    "std": 0.4176
+  },
+  "model.layers.8.mlp.act_fn": {
+    "shape": [
+      2,
+      4,
+      2048
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0615,
+    "std": 0.4352
+  },
+  "model.layers.8.mlp.down_proj": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0106,
+    "std": 0.4176
+  },
+  "model.layers.8.mlp.gate_proj": {
+    "shape": [
+      2,
+      4,
+      2048
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.1981,
+    "std": 0.8074
+  },
+  "model.layers.8.mlp.up_proj": {
+    "shape": [
+      2,
+      4,
+      2048
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.019,
+    "std": 0.7686
+  },
+  "model.layers.8.post_attention_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.3919,
+    "std": 21.9349
+  },
+  "model.layers.8.post_feedforward_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 5.8892,
+    "std": 298.6081
+  },
+  "model.layers.8.pre_feedforward_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0205,
+    "std": 0.847
+  },
+  "model.layers.8.self_attn": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0231,
+    "std": 0.763
+  },
+  "model.layers.8.self_attn.k_norm": {
+    "shape": [
+      2,
+      1,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0003,
+    "std": 2.2492
+  },
+  "model.layers.8.self_attn.k_proj": {
+    "shape": [
+      2,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0847,
+    "std": 2.9636
+  },
+  "model.layers.8.self_attn.o_proj": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0231,
+    "std": 0.763
+  },
+  "model.layers.8.self_attn.q_norm": {
+    "shape": [
+      2,
+      4,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0905,
+    "std": 2.0314
+  },
+  "model.layers.8.self_attn.q_proj": {
+    "shape": [
+      2,
+      4,
+      1024
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0229,
+    "std": 2.7919
+  },
+  "model.layers.8.self_attn.v_proj": {
+    "shape": [
+      2,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0528,
+    "std": 2.4812
+  },
+  "model.layers.9.input_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0599,
+    "std": 2.3373
+  },
+  "model.layers.9.mlp": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0033,
+    "std": 0.1151
+  },
+  "model.layers.9.mlp.act_fn": {
+    "shape": [
+      2,
+      4,
+      2048
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0356,
+    "std": 0.2423
+  },
+  "model.layers.9.mlp.down_proj": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0033,
+    "std": 0.1151
+  },
+  "model.layers.9.mlp.gate_proj": {
+    "shape": [
+      2,
+      4,
+      2048
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0615,
+    "std": 0.451
+  },
+  "model.layers.9.mlp.up_proj": {
+    "shape": [
+      2,
+      4,
+      2048
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0037,
+    "std": 0.3898
+  },
+  "model.layers.9.post_attention_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.3418,
+    "std": 22.6271
+  },
+  "model.layers.9.post_feedforward_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 2.7112,
+    "std": 103.3753
+  },
+  "model.layers.9.pre_feedforward_layernorm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0058,
+    "std": 0.4426
+  },
+  "model.layers.9.self_attn": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0016,
+    "std": 0.6539
+  },
+  "model.layers.9.self_attn.k_norm": {
+    "shape": [
+      2,
+      1,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.08,
+    "std": 2.3767
+  },
+  "model.layers.9.self_attn.k_proj": {
+    "shape": [
+      2,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.1146,
+    "std": 2.4595
+  },
+  "model.layers.9.self_attn.o_proj": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0016,
+    "std": 0.6539
+  },
+  "model.layers.9.self_attn.q_norm": {
+    "shape": [
+      2,
+      4,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": -0.0002,
+    "std": 1.0908
+  },
+  "model.layers.9.self_attn.q_proj": {
+    "shape": [
+      2,
+      4,
+      1024
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0463,
+    "std": 2.7216
+  },
+  "model.layers.9.self_attn.v_proj": {
+    "shape": [
+      2,
+      4,
+      256
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0302,
+    "std": 1.7235
+  },
+  "model.norm": {
+    "shape": [
+      2,
+      4,
+      640
+    ],
+    "frac_finite": 1.0,
+    "mean": 0.0216,
+    "std": 3.9488
+  }
+}

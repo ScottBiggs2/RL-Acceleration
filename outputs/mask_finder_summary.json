@@ -1,0 +1,1127 @@
+{
+  "model": "google/gemma-3-270m",
+  "num_hooks": 163,
+  "problem_layers": {
+    "model.layers.1.pre_feedforward_layernorm": {
+      "phase": "input",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -399.88970947265625,
+        "max": 3750.623046875,
+        "mean": 1.613966464996338,
+        "std": 58.46383285522461,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    },
+    "model.layers.2.input_layernorm": {
+      "phase": "input",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -398.2874450683594,
+        "max": 5102.6337890625,
+        "mean": 1.7766640186309814,
+        "std": 71.3209228515625,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    },
+    "model.layers.2.pre_feedforward_layernorm": {
+      "phase": "input",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -405.6279296875,
+        "max": 5372.43896484375,
+        "mean": 2.2168028354644775,
+        "std": 80.98899841308594,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    },
+    "model.layers.3.input_layernorm": {
+      "phase": "input",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -405.1962890625,
+        "max": 6270.119140625,
+        "mean": 2.0718371868133545,
+        "std": 85.55548858642578,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    },
+    "model.layers.3.pre_feedforward_layernorm": {
+      "phase": "input",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -412.2325134277344,
+        "max": 6764.8251953125,
+        "mean": 3.098590612411499,
+        "std": 105.60291290283203,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    },
+    "model.layers.3.post_feedforward_layernorm": {
+      "phase": "output",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -642.0747680664062,
+        "max": 10495.2275390625,
+        "mean": 1.0339758396148682,
+        "std": 125.0865707397461,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    },
+    "model.layers.4.input_layernorm": {
+      "phase": "input",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -585.1978759765625,
+        "max": 10576.650390625,
+        "mean": 4.132565975189209,
+        "std": 173.8471221923828,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    },
+    "model.layers.4.pre_feedforward_layernorm": {
+      "phase": "input",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -408.52752685546875,
+        "max": 11116.0458984375,
+        "mean": 5.918569564819336,
+        "std": 185.2657012939453,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    },
+    "model.layers.4.post_feedforward_layernorm": {
+      "phase": "output",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -778.8936767578125,
+        "max": 13748.2490234375,
+        "mean": 1.3654236793518066,
+        "std": 157.83802795410156,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    },
+    "model.layers.5.input_layernorm": {
+      "phase": "input",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -783.4912719726562,
+        "max": 24864.294921875,
+        "mean": 7.283992290496826,
+        "std": 313.36297607421875,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    },
+    "model.layers.5.post_attention_layernorm": {
+      "phase": "output",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -174.67555236816406,
+        "max": 2846.4931640625,
+        "mean": 7.379519462585449,
+        "std": 127.98843383789062,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    },
+    "model.layers.5.pre_feedforward_layernorm": {
+      "phase": "input",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -468.35015869140625,
+        "max": 27594.203125,
+        "mean": 14.66351318359375,
+        "std": 362.0054931640625,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    },
+    "model.layers.5.post_feedforward_layernorm": {
+      "phase": "output",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -1805.3470458984375,
+        "max": 14580.6044921875,
+        "mean": 0.7662023305892944,
+        "std": 170.32644653320312,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    },
+    "model.layers.6.input_layernorm": {
+      "phase": "input",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -501.488037109375,
+        "max": 42174.80859375,
+        "mean": 15.429716110229492,
+        "std": 509.9420471191406,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    },
+    "model.layers.6.pre_feedforward_layernorm": {
+      "phase": "input",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -512.4285278320312,
+        "max": 42016.0390625,
+        "mean": 16.5434513092041,
+        "std": 511.5511474609375,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    },
+    "model.layers.6.post_feedforward_layernorm": {
+      "phase": "output",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -1004.00537109375,
+        "max": 13150.3564453125,
+        "mean": 1.5718233585357666,
+        "std": 154.0223388671875,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    },
+    "model.layers.7.input_layernorm": {
+      "phase": "input",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -550.4894409179688,
+        "max": 55166.39453125,
+        "mean": 18.11527442932129,
+        "std": 654.7256469726562,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    },
+    "model.layers.7.post_attention_layernorm": {
+      "phase": "output",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -130.42303466796875,
+        "max": 1778.463134765625,
+        "mean": 2.407296895980835,
+        "std": 52.411338806152344,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    },
+    "model.layers.7.pre_feedforward_layernorm": {
+      "phase": "input",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -548.150390625,
+        "max": 55512.8984375,
+        "mean": 20.522571563720703,
+        "std": 669.884033203125,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    },
+    "model.layers.7.post_feedforward_layernorm": {
+      "phase": "output",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -1598.8848876953125,
+        "max": 13403.3974609375,
+        "mean": 1.3133549690246582,
+        "std": 163.6719970703125,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    },
+    "model.layers.8.input_layernorm": {
+      "phase": "input",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -562.600341796875,
+        "max": 68916.296875,
+        "mean": 21.835927963256836,
+        "std": 821.3818359375,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    },
+    "model.layers.8.pre_feedforward_layernorm": {
+      "phase": "input",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -553.9752807617188,
+        "max": 68545.8515625,
+        "mean": 22.61722183227539,
+        "std": 819.2796020507812,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    },
+    "model.layers.8.post_feedforward_layernorm": {
+      "phase": "output",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -1276.767822265625,
+        "max": 14926.189453125,
+        "mean": 2.2095324993133545,
+        "std": 174.0174102783203,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    },
+    "model.layers.9.input_layernorm": {
+      "phase": "input",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -574.3538818359375,
+        "max": 83472.0390625,
+        "mean": 24.826753616333008,
+        "std": 986.708740234375,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    },
+    "model.layers.9.pre_feedforward_layernorm": {
+      "phase": "input",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -575.5697631835938,
+        "max": 83804.9765625,
+        "mean": 25.72538948059082,
+        "std": 995.8529052734375,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    },
+    "model.layers.9.post_feedforward_layernorm": {
+      "phase": "output",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -591.9553833007812,
+        "max": 4870.40283203125,
+        "mean": -0.09239422529935837,
+        "std": 62.28645324707031,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    },
+    "model.layers.10.input_layernorm": {
+      "phase": "input",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -571.4248046875,
+        "max": 88675.3828125,
+        "mean": 25.63299560546875,
+        "std": 1048.558837890625,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    },
+    "model.layers.10.post_attention_layernorm": {
+      "phase": "output",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -257.1787109375,
+        "max": 2576.84765625,
+        "mean": 3.324132204055786,
+        "std": 88.7162094116211,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    },
+    "model.layers.10.pre_feedforward_layernorm": {
+      "phase": "input",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -574.7861938476562,
+        "max": 89956.40625,
+        "mean": 28.957130432128906,
+        "std": 1085.2882080078125,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    },
+    "model.layers.10.post_feedforward_layernorm": {
+      "phase": "output",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -3051.5595703125,
+        "max": 2469.153076171875,
+        "mean": 2.1089963912963867,
+        "std": 87.95310974121094,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    },
+    "model.layers.11.input_layernorm": {
+      "phase": "input",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -3269.95654296875,
+        "max": 91368.0703125,
+        "mean": 31.066125869750977,
+        "std": 1116.523193359375,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    },
+    "model.layers.11.post_attention_layernorm": {
+      "phase": "output",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -369.9167785644531,
+        "max": 2015.6312255859375,
+        "mean": 3.460705518722534,
+        "std": 70.34082794189453,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    },
+    "model.layers.11.pre_feedforward_layernorm": {
+      "phase": "input",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -3112.058349609375,
+        "max": 91908.328125,
+        "mean": 34.52683639526367,
+        "std": 1143.494140625,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    },
+    "model.layers.11.post_feedforward_layernorm": {
+      "phase": "output",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -2368.0810546875,
+        "max": 7035.63623046875,
+        "mean": -1.2491775751113892,
+        "std": 125.93387603759766,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    },
+    "model.layers.12.input_layernorm": {
+      "phase": "input",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -2508.9736328125,
+        "max": 98943.9609375,
+        "mean": 33.27764892578125,
+        "std": 1212.5283203125,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    },
+    "model.layers.12.post_attention_layernorm": {
+      "phase": "output",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -1189.0810546875,
+        "max": 2044.1070556640625,
+        "mean": 2.6994705200195312,
+        "std": 106.96905517578125,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    },
+    "model.layers.12.pre_feedforward_layernorm": {
+      "phase": "input",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -2523.674560546875,
+        "max": 100583.9765625,
+        "mean": 35.97711944580078,
+        "std": 1257.6959228515625,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    },
+    "model.layers.12.post_feedforward_layernorm": {
+      "phase": "output",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -960.4242553710938,
+        "max": 1666.122802734375,
+        "mean": 2.446535348892212,
+        "std": 115.78627014160156,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    },
+    "model.layers.13.input_layernorm": {
+      "phase": "input",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -1316.4234619140625,
+        "max": 99903.484375,
+        "mean": 38.42365264892578,
+        "std": 1262.3089599609375,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    },
+    "model.layers.13.post_attention_layernorm": {
+      "phase": "output",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -500.4900817871094,
+        "max": 4547.42626953125,
+        "mean": 9.243011474609375,
+        "std": 165.4690704345703,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    },
+    "model.layers.13.pre_feedforward_layernorm": {
+      "phase": "input",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -1307.9854736328125,
+        "max": 102903.984375,
+        "mean": 47.66666793823242,
+        "std": 1360.5042724609375,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    },
+    "model.layers.13.post_feedforward_layernorm": {
+      "phase": "output",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -605.339111328125,
+        "max": 2668.71484375,
+        "mean": 0.5671352744102478,
+        "std": 114.1923599243164,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    },
+    "model.layers.14.input_layernorm": {
+      "phase": "input",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -1346.2117919921875,
+        "max": 102359.90625,
+        "mean": 48.23379898071289,
+        "std": 1385.82177734375,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    },
+    "model.layers.14.post_attention_layernorm": {
+      "phase": "output",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -242.74745178222656,
+        "max": 2638.766845703125,
+        "mean": 6.540812015533447,
+        "std": 100.04208374023438,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    },
+    "model.layers.14.pre_feedforward_layernorm": {
+      "phase": "input",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -1378.0428466796875,
+        "max": 104405.5,
+        "mean": 54.77460861206055,
+        "std": 1452.8931884765625,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    },
+    "model.layers.14.post_feedforward_layernorm": {
+      "phase": "output",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -2290.03125,
+        "max": 2699.42041015625,
+        "mean": -1.7848625183105469,
+        "std": 123.44414520263672,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    },
+    "model.layers.15.input_layernorm": {
+      "phase": "input",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -1826.236328125,
+        "max": 104162.390625,
+        "mean": 52.989749908447266,
+        "std": 1451.39013671875,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    },
+    "model.layers.15.post_attention_layernorm": {
+      "phase": "output",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -1291.32958984375,
+        "max": 1643.93115234375,
+        "mean": 2.3229126930236816,
+        "std": 92.95455932617188,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    },
+    "model.layers.15.pre_feedforward_layernorm": {
+      "phase": "input",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -1936.0435791015625,
+        "max": 102871.0625,
+        "mean": 55.31266403198242,
+        "std": 1466.0523681640625,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    },
+    "model.layers.15.post_feedforward_layernorm": {
+      "phase": "output",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -1663.2001953125,
+        "max": 1516.9161376953125,
+        "mean": -3.6938400268554688,
+        "std": 139.2196807861328,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    },
+    "model.layers.16.input_layernorm": {
+      "phase": "input",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -2319.416015625,
+        "max": 101207.859375,
+        "mean": 51.61882400512695,
+        "std": 1464.3272705078125,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    },
+    "model.layers.16.post_attention_layernorm": {
+      "phase": "output",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -389.1954345703125,
+        "max": 3445.1162109375,
+        "mean": 4.516290187835693,
+        "std": 118.66152954101562,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    },
+    "model.layers.16.pre_feedforward_layernorm": {
+      "phase": "input",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -2708.611328125,
+        "max": 102772.171875,
+        "mean": 56.13511657714844,
+        "std": 1540.00390625,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    },
+    "model.layers.16.post_feedforward_layernorm": {
+      "phase": "output",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -19684.462890625,
+        "max": 7528.83935546875,
+        "mean": -1.1185587644577026,
+        "std": 334.779541015625,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    },
+    "model.layers.17.input_layernorm": {
+      "phase": "input",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -3444.472412109375,
+        "max": 83087.7109375,
+        "mean": 55.01654815673828,
+        "std": 1525.827880859375,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    },
+    "model.layers.17.post_attention_layernorm": {
+      "phase": "output",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -309.1745300292969,
+        "max": 784.7138671875,
+        "mean": -1.5674985647201538,
+        "std": 59.864627838134766,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    },
+    "model.layers.17.pre_feedforward_layernorm": {
+      "phase": "input",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -3547.503662109375,
+        "max": 83251.7578125,
+        "mean": 53.449058532714844,
+        "std": 1544.8538818359375,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    },
+    "model.layers.17.post_feedforward_layernorm": {
+      "phase": "output",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -16948.375,
+        "max": 5168.87255859375,
+        "mean": 4.5996623039245605,
+        "std": 316.2950439453125,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    },
+    "model.norm": {
+      "phase": "input",
+      "stats": {
+        "shape": [
+          1,
+          12,
+          640
+        ],
+        "dtype": "torch.float32",
+        "min": -4096.30517578125,
+        "max": 66303.3828125,
+        "mean": 58.0487174987793,
+        "std": 1483.61572265625,
+        "num_nan": 0,
+        "num_inf": 0,
+        "num_finite": 7680,
+        "frac_finite": 1.0
+      }
+    }
+  }
+}
