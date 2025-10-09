@@ -19,3 +19,9 @@ src/
 │
 └── main_mask_finder.py      # orchestration script
 
+
+To-Do: 
+* version pin the requirements.txt
+* add *.json to .gitignore
+* stop swearing in public commit messages (not gonna happen)
+* 

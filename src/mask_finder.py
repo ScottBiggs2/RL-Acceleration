@@ -1,21 +1,31 @@
-# mask_finder.py
 import torch
 import torch.nn as nn
 import json
 import os
 from collections import defaultdict
-from contextlib import nullcontext
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
 
-def collect_module_stats(model, device, input_texts, max_length=512, out_dir="outputs"):
+def collect_activation_masks(
+    model,
+    device,
+    input_texts,
+    max_length=512,
+    out_dir="outputs",
+    activation_threshold=50.0,
+    percentile_clip=0.99,
+    top_k=50,
+):
     """
-    Run a forward pass and record per-layer activation stats.
-    Excludes attention projections; focuses on MLP and norm layers.
+    Runs a forward pass through target (MLP) layers, collects activations, and computes:
+      - per-layer binary activation masks
+      - per-layer top-K neuron indices
+    Saves both as .pt (tensor) and .json for later use.
     """
-
     os.makedirs(out_dir, exist_ok=True)
-    summary_path = os.path.join(out_dir, "mask_finder_summary.json")
+    mask_dir = os.path.join(out_dir, "masks")
+    os.makedirs(mask_dir, exist_ok=True)
+    summary_path = os.path.join(out_dir, "mask_summary.json")
 
     tokenizer = AutoTokenizer.from_pretrained(model.config._name_or_path)
     inputs = tokenizer(
@@ -26,97 +36,113 @@ def collect_module_stats(model, device, input_texts, max_length=512, out_dir="ou
         max_length=max_length,
     ).to(device)
 
+    activations = {}
     stats = defaultdict(list)
 
+    # =====================================================
+    # --- Hook setup ---
+    # =====================================================
     def make_hook(name):
         def hook_fn(module, inp, out):
-            def safe_stats(tensor):
-                if not torch.is_floating_point(tensor):
-                    return None
-                tensor = tensor.detach()
-                numel = tensor.numel()
-                num_nan = torch.isnan(tensor).sum().item()
-                num_inf = torch.isinf(tensor).sum().item()
-                num_finite = numel - num_nan - num_inf
-                frac_finite = num_finite / max(1, numel)
-                t_finite = tensor[torch.isfinite(tensor)]
-                if t_finite.numel() == 0:
-                    mean = std = t_min = t_max = None
-                else:
-                    mean = t_finite.mean().item()
-                    std = t_finite.std().item()
-                    t_min = t_finite.min().item()
-                    t_max = t_finite.max().item()
+            if not torch.is_tensor(out):
+                return
+            out = out.detach().to("cpu")
+            finite_mask = torch.isfinite(out)
+            out_finite = out[finite_mask]
+            if out_finite.numel() == 0:
+                return
 
-                return dict(
-                    shape=list(tensor.shape),
-                    dtype=str(tensor.dtype),
-                    min=t_min,
-                    max=t_max,
-                    mean=mean,
-                    std=std,
-                    num_nan=num_nan,
-                    num_inf=num_inf,
-                    num_finite=num_finite,
-                    frac_finite=frac_finite,
+            # Store full activation for mask computation
+            activations[name] = out.view(-1, out.shape[-1]).float().cpu()
+
+            # Basic stats
+            stats[name].append(
+                dict(
+                    mean=out_finite.mean().item(),
+                    std=out_finite.std().item(),
+                    min=out_finite.min().item(),
+                    max=out_finite.max().item(),
+                    frac_finite=finite_mask.float().mean().item(),
                 )
-
-            s_in = safe_stats(inp[0]) if isinstance(inp, tuple) and len(inp) > 0 else None
-            s_out = safe_stats(out) if isinstance(out, torch.Tensor) else None
-            stats[name].append({"phase": "input", "stats": s_in})
-            stats[name].append({"phase": "output", "stats": s_out})
+            )
 
         return hook_fn
 
-    # attach hooks only for relevant layers
-    patterns = ["mlp", "feedforward", "ffn", "layernorm", "norm"]
+    # Attach hooks only to MLP/feedforward layers
+    patterns = ["mlp", "feedforward", "ffn"]
     hooks = []
     for name, module in model.named_modules():
         lname = name.lower()
-        if any(p in lname for p in patterns) and not any(attn in lname for attn in ["self_attn", "q_proj", "k_proj", "v_proj", "o_proj"]):
+        if any(p in lname for p in patterns) and not any(
+            a in lname for a in ["self_attn", "q_proj", "k_proj", "v_proj", "o_proj"]
+        ):
             hooks.append(module.register_forward_hook(make_hook(name)))
 
-    print(f"[MASK_FINDER] Attached {len(hooks)} hooks to target modules")
+    print(f"[MASK_FINDER] Attached {len(hooks)} MLP hooks")
 
+    # =====================================================
+    # --- Forward pass ---
+    # =====================================================
     with torch.no_grad():
         _ = model(**inputs)
 
     for h in hooks:
         h.remove()
 
-    # identify problem layers
-    problem_layers = {}
-    for name, recs in stats.items():
-        for entry in recs:
-            s = entry["stats"]
-            if s is None:
-                continue
-            if s["num_nan"] > 0 or s["num_inf"] > 0 or (s["std"] is not None and s["std"] > 50):
-                problem_layers[name] = entry
-                break
+    # =====================================================
+    # --- Compute masks ---
+    # =====================================================
+    masks = {}
+    mask_summary = {}
 
-    summary = {
-        "model": model.config._name_or_path,
-        "num_hooks": len(hooks),
-        "problem_layers": problem_layers,
-    }
+    for name, acts in activations.items():
+        if acts.numel() == 0:
+            continue
 
+        threshold = min(
+            activation_threshold,
+            torch.quantile(acts.abs(), percentile_clip).item(),
+        )
+
+        # Binary activation mask (bounded)
+        mask = (acts.abs() < threshold).float()
+        masks[name] = mask
+
+        # Compute per-neuron mean abs activation → ranking
+        neuron_scores = acts.abs().mean(dim=0)
+        ranked = torch.argsort(neuron_scores, descending=True)
+        top_indices = ranked[:top_k].cpu().tolist()
+
+        # Save both tensor + JSON
+        torch.save(mask, os.path.join(mask_dir, f"{name.replace('.', '_')}.pt"))
+        json_path = os.path.join(mask_dir, f"{name.replace('.', '_')}_mask.json")
+        with open(json_path, "w") as f:
+            json.dump({"top_k": top_indices}, f, indent=2)
+
+        mask_summary[name] = {
+            "threshold": threshold,
+            "mean": stats[name][0]["mean"],
+            "std": stats[name][0]["std"],
+            "frac_finite": stats[name][0]["frac_finite"],
+            "mask_keep_ratio": mask.mean().item(),
+            "top_k": top_indices,
+        }
+
+    # =====================================================
+    # --- Write summary ---
+    # =====================================================
     with open(summary_path, "w") as f:
-        json.dump(summary, f, indent=2)
+        json.dump(mask_summary, f, indent=2)
 
-    print(f"[MASK_FINDER] Wrote summary to {summary_path}")
-    if not problem_layers:
-        print("[MASK_FINDER] No instabilities found — all monitored layers stable.")
-    else:
-        print(f"[MASK_FINDER] {len(problem_layers)} problematic layers identified.")
-
-    return summary
+    print(f"[MASK_FINDER] Saved {len(masks)} masks to {mask_dir}")
+    print(f"[MASK_FINDER] Summary written to {summary_path}")
+    return mask_summary
 
 
 if __name__ == "__main__":
-    device = torch.device("cpu")  # safer for debugging
+    device = torch.device("cpu")
     model_name = "google/gemma-3-270m"
     model = AutoModelForCausalLM.from_pretrained(model_name, torch_dtype=torch.float32).to(device)
 
-    texts = ["This is a simple test sequence to evaluate layer stability."]
-    collect_module_stats(model, device, texts)
+    texts = ["This is a simple test sequence to evaluate mask stability."]
+    mask_summary = collect_activation_masks(model, device, texts)
