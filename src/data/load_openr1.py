@@ -28,7 +28,7 @@ def load_openr1_subset(tokenizer_name="google/gemma-3-270m",
             - attention_mask (list[int] per example)
         tokenizer
     """
-    dataset = load_dataset("open-r1/OpenR1-Math-220k", split=split)
+    dataset = load_dataset("open-r1/OpenR1-Math-220k", split=split) # streaming = True
 
     # Subsample deterministically
     if subset_size and subset_size < len(dataset):
